@@ -1,0 +1,38 @@
+ul > li {
+    list-style: none;
+} 
+/*seltor de filhos diretos da ul*/
+
+h1 + p {
+    margin-bottom: 10px;
+}
+/*O elemento que esta imediatamente após o outro */
+
+h1 ~ p {
+    color:beige;
+}
+/* seleltor que aplica o estilo a todos os irmãos de um elemento especifico*/
+
+div p {
+    color: aliceblue;
+}
+/*todos os "p's" que estão dentro de uma div*/
+
+p::after{
+    content: seu nome;
+}
+/*O "seu nome" vai ser adicionado após todos os paragrafos*/ 
+
+p::first-letter {
+    color: blue;
+    /*somente a primeira letra*/
+}
+p::first-line {
+    color: aqua;
+    /* somete a primeira liha */
+}
+
+button:not(.primary){
+    color: aquamarine;
+}
+/*MENOS O BOTÃO QUE TEM A CLASSE X="PRIMARY"*/
