@@ -1,4 +1,4 @@
-function inserir (){
+function inserir (valor){
     let tela = document.formulario.tela;
     
     if(tela.value.length < 14){
@@ -25,7 +25,7 @@ function calcularOTotal (){
 
     if (expressao && !isOperador(expressao[expressao.length -1])){
         try {
-            let reultado = calcularExpressao
+            let reultado = calcularExpressao(expressao)
             tela.value = resultado
         } catch (error){
             alert ("expressao invalida")
