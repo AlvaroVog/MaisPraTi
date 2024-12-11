@@ -10,13 +10,14 @@ document.addEventListener ('DOMContentLoaded', () => {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev'
         }
+        
     })
-
-document.addEventListener('keydown', (event)=> {
-    if (event.key === 'ArrowRight') {
-        swiper.slidePrev ()
-    } else if (event.key === 'ArrowRight'){
-        swiper.slideNext ()
-    }
-})
+    
+    document.addEventListener('keydown', (event)=> {
+        if (event.key === 'ArrowRight') {
+            swiper.slidePrev ()
+        } else if (event.key === 'ArrowRight'){
+            swiper.slideNext ()
+        }
+    })
 })
